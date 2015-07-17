@@ -84,13 +84,25 @@ source $ZSH/oh-my-zsh.sh
 #export GOROOT="/cygdrive/c/Go"
 #export GOPATH="//psf/oledev/gocodez"
 #export GOPATH="c:\\gocodez"
-export PATH=$PATH:/cygdrive/c/Program\ Files/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin
+#export PATH=$PATH:/cygdrive/c/Program\ Files/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin
+#
+export GOROOT="$(cygpath -w $HOME/opt/go/go-1.4.2)"
+export GOPATH="$(cygpath -w $HOME/gocodez)"
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/opt/go/go-1.4.2/bin
+export PATH=$PATH:$HOME/opt/mingw64-x86_64-4.8.5-release-posix-seh-rt_v4-rev0/mingw64/bin
+export PATH=$PATH:$HOME/opt/inno_setup/5.5.5
 
-alias gocodez="cd $GOPATH"
 alias open="explorer.exe"
-alias subl="/cygdrive/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
-alias g2.oledev="cd /cygdrive/d/oledev"
+#alias subl="/cygdrive/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
+#alias g2.oledev="cd /cygdrive/d/oledev"
+alias g2.gocodez="cd $GOPATH"
+alias g2.hickwall="cd $HOME/gocodez/src/github.com/oliveagle/hickwall"
 
 #export http_proxy=http://localhost:5555
 #export https_proxy=http://localhost:5555
+
+# --------- cygwin environment ---------------------
+print -r -- "Cygwin root:  $(cygpath -w /)"
+print -r -- "Cygwin \$HOME: $(cygpath -w $HOME)"
+
