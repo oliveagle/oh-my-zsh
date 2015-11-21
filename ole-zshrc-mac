@@ -74,13 +74,7 @@ alias cpwd="copydir"
 eval "$(fasd --init auto)"
 
 
-<<<<<<< HEAD
-export GOROOT=/usr/local/Cellar/go/1.3.3
-#export GOROOT=/usr/local/Cellar/go/1.4
-=======
-#export GOROOT=/usr/local/Cellar/go/1.3.3
 export GOROOT=/usr/local/Cellar/go/1.4.2
->>>>>>> 8ab7cef10fbb22d7ef344be552adcd5e4d67492c
 export GOPATH=/Users/oliveagle/oledev/gocodez
 
 
@@ -94,11 +88,7 @@ export GOPATH=/Users/oliveagle/oledev/gocodez
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:~/.rvm/bin
-<<<<<<< HEAD
-export PATH=$PATH:/usr/local/share/npm/bin/
-=======
 export PATH=$PATH:/usr/local/share/npm/bin
->>>>>>> 8ab7cef10fbb22d7ef344be552adcd5e4d67492c
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
@@ -169,16 +159,7 @@ export PIP_DOWNLOAD_CACHE="/Users/oliveagle/.pip/cache/"
 export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
 export NODE_PATH=$NODE_PATH:"/usr/local/lib/node_modules"
  
-<<<<<<< HEAD
-#export http_proxy=http://127.0.0.1:8087
-#export https_proxy=https://127.0.0.1:8087
-#export http_proxy=socks5://127.0.0.1:7070
-#export https_proxy=socks5://127.0.0.1:7070
-#export http_proxy=socks://127.0.0.1:7070
-#export https_proxy=socks://127.0.0.1:7070
-=======
 #export ALL_PROXY=socks://127.0.0.1:5555
->>>>>>> 8ab7cef10fbb22d7ef344be552adcd5e4d67492c
 export no_proxy='localhost,127.0.0.*,10.*,192.168.*, *.global.ctrip.com, *.ctripcorp.com, *.sh.ctriptravel.com, 172.30.*, 172.29.*, 172.16.*, 172.28.*, 10.168.*, 10.8.*, 10.2.*, *.cn1.global.ctrip.com'
 
 
@@ -232,12 +213,4 @@ export jdkhome='/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home'
 
 
 # go dev env
-<<<<<<< HEAD
-alias go-dev='docker run --name ole-go-env -ti -p 1022:22 -v /Users/oliveagle/oledev/gocodez:/gopath ole-el6-golang /bin/zsh'
-alias enter-go-dev='docker-enter ole-go-env /bin/zsh'
-=======
-alias go-dev='docker run --name ole-go-env -ti -p 1022:22 -v /Users/oliveagle/oledev/gocodez:/gopath -v /Users/oliveagle/oledev/repos/oschina/ole_snippets/lang_go:/go_snippets ole-el6-golang /bin/zsh'
-alias enter-go-dev='docker-enter ole-go-env /bin/zsh'
-
 alias g2.hickwall='cd /Users/oliveagle/oledev/gocodez/src/github.com/oliveagle/hickwall'
->>>>>>> 8ab7cef10fbb22d7ef344be552adcd5e4d67492c
