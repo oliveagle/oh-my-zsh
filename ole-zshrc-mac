@@ -53,4 +53,4 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 if [ -f ~/.zshrc_ole ]; then
     source ~/.zshrc_ole
-fi   ]
+fi
