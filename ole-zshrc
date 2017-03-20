@@ -47,9 +47,11 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git osx colored-man history copydir virtualenv-prompt)
-plugins=(git colored-man history virtualenv-prompt)
+plugins=(git colored-man history copydir virtualenv-prompt)
 
 source $ZSH/oh-my-zsh.sh
+
+alias cpwd="copydir"
 
 # User configuration
 
