@@ -12,7 +12,7 @@ rbenv_version() {
 }
 
 _goenv() {
-    [ -n "${GOENV}" ] && echo "(golang-${GOENV}) " && return
+    [ -n "${GOENV}" ] && echo "(go-${GOENV}) " && return
 }
 
 if (( `id -u` == 0 )); then
